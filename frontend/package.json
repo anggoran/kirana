@@ -1,0 +1,36 @@
+{
+  "name": "kirana",
+  "productName": "kirana",
+  "version": "0.0.1",
+  "description": "Neat statistics with a few clicks.",
+  "main": ".vite/build/main.js",
+  "scripts": {
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make",
+    "publish": "electron-forge publish",
+    "lint": "echo \"No linting configured\""
+  },
+  "keywords": [],
+  "author": {
+    "name": "Anggoran",
+    "email": "anggoranm@gmail.com"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@electron-forge/cli": "^6.1.1",
+    "@electron-forge/maker-squirrel": "^6.1.1",
+    "@electron-forge/plugin-vite": "^6.1.1",
+    "@types/react": "^18.2.7",
+    "@types/react-dom": "^18.2.4",
+    "electron": "24.4.0"
+  },
+  "dependencies": {
+    "antd": "^5.5.1",
+    "electron-squirrel-startup": "^1.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.11.2",
+    "realm": "^11.9.0"
+  }
+}
