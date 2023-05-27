@@ -5,28 +5,25 @@ on:
     branches:
       - main
     paths:
-      - web/**
+      - ".github/workflows/deploy.yml"
+      - "web/**"
 
 jobs:
   deploy:
     name: Deploy to GitHub Pages
     runs-on: ubuntu-latest
     steps:
-      - name: Open web directory
-        run: cd web
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
           node-version: 18
           cache: npm
       - name: Install dependencies
-        run: npm install --frozen-lockfile
+        run: npm ci
       - name: Build website
-        run: npm build
+        run: npm run workspace web build
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./build
-          user_name: anggoran
-          user_email: anggoranm@gmail.com
+          publish_dir: web/build
