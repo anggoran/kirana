@@ -9,6 +9,7 @@ on:
       - "web/**"
 jobs:
   deploy:
+    name: Deploy to GitHub Pages
     runs-on: ubuntu-latest
     defaults:
       run:
