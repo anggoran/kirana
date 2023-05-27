@@ -1,7 +1,7 @@
-[ Tech Stack ]
+### [ Tech Stack ]
 
-Frontend: React
-Backend: Python
-Database: SQLite
-Design: Ant Design
-Platform: Electron
+- Frontend: React
+- Backend: Django
+- Database: SQLite
+- Design: Github Primer
+- Platform: Electron

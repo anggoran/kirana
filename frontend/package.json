@@ -2,7 +2,7 @@
   "name": "kirana",
   "productName": "kirana",
   "version": "0.0.1",
-  "description": "Neat statistics with a few clicks.",
+  "description": "Modern statistics in a few clicks.",
   "main": ".vite/build/main.js",
   "scripts": {
     "start": "electron-forge start",
@@ -16,7 +16,7 @@
     "name": "Anggoran",
     "email": "anggoranm@gmail.com"
   },
-  "license": "MIT",
+  "license": "Apache-2.0",
   "devDependencies": {
     "@electron-forge/cli": "^6.1.1",
     "@electron-forge/maker-squirrel": "^6.1.1",
@@ -30,7 +30,6 @@
     "electron-squirrel-startup": "^1.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.11.2",
-    "realm": "^11.9.0"
+    "react-router-dom": "^6.11.2"
   }
 }
