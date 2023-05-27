@@ -26,6 +26,12 @@ jobs:
         run: npm ci
       - name: Build website
         run: npm run build
+      - name: Setup pages
+        uses: actions/configure-pages@v3.0.6
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v1.0.8
+        with:
+          path: web/build
   deploy:
     needs: build
     permissions:
@@ -36,12 +42,6 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      - name: Setup pages
-        uses: actions/configure-pages@v3.0.6
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1.0.8
-        with:
-          path: web/build
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2.0.1
