@@ -1,10 +1,18 @@
 module.exports = {
-  packagerConfig: {},
+  packagerConfig: {
+    name: "Kirana",
+    appBundleId: "dev.aktivis.kirana",
+    asar: true,
+    afterExtract: ["./package/include-flask.js"],
+    afterPrune: ["./package/exclude-lproj.js"],
+  },
   rebuildConfig: {},
   makers: [
     {
-      name: "@electron-forge/maker-squirrel",
-      config: {},
+      name: "@electron-forge/maker-dmg",
+      config: {
+        format: "ULFO",
+      },
     },
   ],
   plugins: [
@@ -14,10 +22,6 @@ module.exports = {
         build: [
           {
             entry: "electron/main.ts",
-            config: "vite.config.js",
-          },
-          {
-            entry: "electron/preload.ts",
             config: "vite.config.js",
           },
         ],

@@ -1,7 +1,7 @@
 {
   "name": "kirana",
   "productName": "kirana",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Modern statistics in a few clicks.",
   "main": ".vite/build/main.js",
   "scripts": {
@@ -13,12 +13,13 @@
   },
   "keywords": [],
   "author": {
-    "name": "Anggoran",
+    "name": "Aktivis FOSS",
     "email": "anggoranm@gmail.com"
   },
   "license": "Apache-2.0",
   "devDependencies": {
     "@electron-forge/cli": "^6.1.1",
+    "@electron-forge/maker-dmg": "^6.1.1",
     "@electron-forge/maker-squirrel": "^6.1.1",
     "@electron-forge/plugin-vite": "^6.1.1",
     "@types/react": "^18.2.7",
@@ -26,10 +27,12 @@
     "electron": "24.4.0"
   },
   "dependencies": {
-    "antd": "^5.5.1",
+    "@primer/react": "^35.25.1",
+    "axios": "^1.4.0",
     "electron-squirrel-startup": "^1.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.11.2"
+    "react-router-dom": "^6.11.2",
+    "styled-components": "^5.3.11"
   }
 }

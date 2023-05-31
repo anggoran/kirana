@@ -1,4 +1,7 @@
-node_modules
+.DS_Store
 .vite
 .venv
 .docusaurus
+.vscode
+node_modules
+out
