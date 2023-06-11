@@ -1,7 +1,15 @@
 ### [ Tech Stack ]
 
 - Frontend: React
-- Backend: Django
+- Backend: Flask
 - Database: SQLite
-- Design: Github Primer
+- Design: Cloudscape
 - Platform: Electron
+- Data:
+  - D3
+  - Pandas
+  - Statsmodels (soon)
+  - NLTK (soon)
+- User Interface: Storybook (soon)
+- User Experience: XState (soon)
+- Documentation: Docusaurus
