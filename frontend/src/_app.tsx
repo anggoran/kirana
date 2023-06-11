@@ -1,13 +1,29 @@
-import React from "react";
+import "@cloudscape-design/global-styles/index.css";
+import { AppLayout, BreadcrumbGroup } from "@cloudscape-design/components";
+import SideBar from "./views/components/SideBar";
 import ReactDOM from "react-dom";
-import Home from "./views/pages/index";
-import { ThemeProvider } from "@primer/react";
+import CreatePage from "./views/pages/create";
+import { StrictMode } from "react";
 
-ReactDOM.render(
-  <React.StrictMode>
-    <ThemeProvider>
-      <Home />
-    </ThemeProvider>
-  </React.StrictMode>,
-  document.getElementById("root")
-);
+export default function App() {
+  return (
+    <StrictMode>
+      <AppLayout
+        breadcrumbs={
+          <BreadcrumbGroup
+            items={[
+              { text: "Home", href: "/" },
+              { text: "Create Analysis", href: "/create" },
+            ]}
+          />
+        }
+        navigation={<SideBar />}
+        content={<CreatePage />}
+        toolsHide
+        navigationHide
+      />
+    </StrictMode>
+  );
+}
+
+ReactDOM.render(<App />, document.getElementById("root"));
