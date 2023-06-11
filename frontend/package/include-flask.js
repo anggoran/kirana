@@ -10,11 +10,8 @@ module.exports = async function (
 ) {
   if (platform === "darwin") {
     fs.copy(
-      "../backend/out/dist/Kirana Server.app",
-      path.join(
-        extractPath,
-        "Electron.app/Contents/Resources/Kirana Server.app"
-      ),
+      "../backend/out/dist/Kirana Server",
+      path.join(extractPath, "Electron.app/Contents/Resources/Kirana Server"),
       () => done()
     );
   }
