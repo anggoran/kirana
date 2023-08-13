@@ -1,0 +1,25 @@
+# https://python-poetry.org/docs/pyproject/
+
+[tool.poetry]
+name = "kirana-backend"
+version = "0.1.0"
+description = "Social research in a few clicks"
+license = "Apache-2.0"
+homepage = "https://aktivis.github.io/kirana"
+repository = "https://github.com/aktivis/kirana"
+authors = ["Anggoran <anggoranm@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "3.11.4"
+python-dotenv = "^1.0"
+Flask = "^2.3"
+waitress = "^2.1"
+SQLAlchemy = "^2.0"
+duckdb = "^0.8"
+polars = "^0.18"
+
+[tool.poetry.dev-dependencies]
+black = "^23.7"
+mypy = "^1.4"
+pytest = "^7.4"
+pyinstaller = "^5.13"
