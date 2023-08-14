@@ -1,3 +1,6 @@
+### Update
+To fasten development as I do it alone currently, this repo is archived temporarily. Please refer to https://github.com/aktivis/kirana
+
 ### [ Tech Stack ]
 
 - Frontend: React
